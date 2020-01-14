@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ThroughCliComponent } from './through-cli/through-cli.component';
 import { ManuallyComponent } from './manually/manual';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThroughCliComponent,
-    ManuallyComponent
+    ManuallyComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,

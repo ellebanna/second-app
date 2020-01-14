@@ -1,0 +1,10 @@
+<p>{{activity}}</p>
+<img [src] = "imageUrl"/>
+<!--other way== <img src = "{{imageUrl}}"/> -->
+<p></p>
+<button [class.active]="isActive">Class Binding Button</button>
+<p></p>
+<button [style.background]="isActive ? 'lightblue' : 'gray'" [style.font-size]="'20px'">Style Binding Button</button>
+<p></p>
+<button [class.active]="isActive" (click) = "onClick1()">Event1 Binding Button</button> 
+<!--other way == <button [class.active]="isActive" on-click="onClick2()">Event2 Binding Button</button> -->
