@@ -81,7 +81,6 @@ svg.material-icons:not(:last-child) {
   border-radius: 4px;
   border: 1px solid #eee;
   background-color: #f7e4c4;
-  height: 7px;
   width: 500px;
   margin: 0 8px 16px;
   padding: 16px;
@@ -96,7 +95,20 @@ svg.material-icons:not(:last-child) {
   border-radius: 20px;
   border-style: outset;
   background-color: #c0ecee;
-  height: 300px;
+  width: 500px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+.card3 {
+  border-radius: 20px;
+  border-style: outset;
+  background-color: #c0ecee;
   width: 500px;
   margin: 0 8px 16px;
   padding: 16px;
