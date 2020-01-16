@@ -96,7 +96,20 @@ svg.material-icons:not(:last-child) {
   border-radius: 20px;
   border-style: outset;
   background-color: #c0ecee;
-  height: 250px;
+  width: 500px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 24px;
+}
+.card3 {
+  border-radius: 20px;
+  border-style: outset;
+  background-color: #c0ecee;
   width: 500px;
   margin: 0 8px 5px;
   padding: 16px;

@@ -1,0 +1,9 @@
+<p>Activity 4 </p>
+<h3> Parent Template: </h3>
+<p></p>
+<label>Message From Child Data: {{cdata}} </label>
+<p></p>
+<input type = "text" [(ngModel)] = "temparentData"/> <button (click) = "onClick1()" >Send</button>
+<p></p>
+<hr/> 
+<app-child (childEvent) = "cdata=$event" [parentData] = "pdata"></app-child>

@@ -8,7 +8,9 @@ import { ThroughCliComponent } from './through-cli/through-cli.component';
 import { ManuallyComponent } from './manually/manual';
 import { BindingComponent } from './binding/binding.component';
 import { ParentComponent } from './parent/parent';
-
+import { ChildComponent } from './child/child';
+import { SecondparentComponent } from './secondparent/secondparent.component';
+import { SecondchildComponent } from './secondchild/secondchild.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +18,14 @@ import { ParentComponent } from './parent/parent';
     ManuallyComponent,
     BindingComponent,
     ParentComponent,
-    FormsModule
+    ChildComponent,
+    SecondparentComponent,
+    SecondchildComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
