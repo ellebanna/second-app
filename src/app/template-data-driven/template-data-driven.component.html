@@ -1,0 +1,25 @@
+<h1>Template Driven</h1>
+<form (ngSubmit)="onSubmit()" #form="ngForm">
+    <h3>Fullname</h3>
+    <input name="name" [(ngModel)]="fullname" required #name="ngModel" minlength="5" />
+    <div *ngIf="name.invalid && (name.dirty || name.touched)" class=" alert alert-danger">
+        <p *ngIf="name.errors.required">
+            This field is required!
+        </p>
+        <p *ngIf="name.errors.minlength">
+            Must at least 5 characters!
+        </p>
+    </div>
+    <br>
+    <button [disabled]="!form.form.valid">Submit</button>
+</form>
+
+<hr>
+
+<h1>Data Driven</h1>
+<form [formGroup]="reactiveForm" (ngSubmit)="onSubmitData()">
+    <h3>Fullname</h3>
+    <input type="text" formControlName="fullname"  />
+    <br>
+    <button type="submit" [disabled]="!reactiveForm.valid">Submit</button>
+</form>

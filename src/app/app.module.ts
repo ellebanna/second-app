@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +11,10 @@ import { ParentComponent } from './parent/parent';
 import { ChildComponent } from './child/child';
 import { SecondparentComponent } from './secondparent/secondparent.component';
 import { SecondchildComponent } from './secondchild/secondchild.component';
+import { TemplateDataDrivenComponent } from './template-data-driven/template-data-driven.component';
+import { TemplateDrivenComponent } from './template-driven/template-driven.component';
+import { DataDrivenComponent } from './data-driven/data-driven.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,12 +24,17 @@ import { SecondchildComponent } from './secondchild/secondchild.component';
     ParentComponent,
     ChildComponent,
     SecondparentComponent,
-    SecondchildComponent
+    SecondchildComponent,
+    TemplateDataDrivenComponent,
+    TemplateDrivenComponent,
+    DataDrivenComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
